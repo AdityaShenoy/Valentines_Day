@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        svg {
+            display: block;
+            margin: auto;
+            animation: heart_beat 0.5s infinite;
+        }
+
+        @keyframes heart_beat {
+            from {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        div {
+            text-align: center;
+            font-size: 5vh;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <svg height=600 width=600>
+        <path d="
+                M 300 500
+                q -150 -50 -200 -200
+                q -20 -50 0 -100
+                q 25 -75 100 -100
+                q 75 25 100 100
+                q 25 -75 100 -100
+                q 75 25 100 100
+                q 20 50 0 100
+                q -50 150 -200 200" fill="red"/>
+    </svg>
+    <div>
+        Happy Valentine's Day
+    </div>
+</body>
+</html>
